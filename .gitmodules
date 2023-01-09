@@ -1,0 +1,4 @@
+[submodule "esp/ESP32-Wi-Fi-Penetration-Tool"]
+	path = esp/ESP32-Wi-Fi-Penetration-Tool
+	url = https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool.git
+	branch = flipper
