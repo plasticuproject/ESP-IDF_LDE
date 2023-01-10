@@ -9,15 +9,14 @@ Everything needed to modify, develop, and build the [ESP32-Wi-Fi-Penetration-Too
 
 ![what-you-need](/images/what-you-need.png)
 
-Clone this repository and make any desired firmware modifications to the source files in `./ESP-IDF_LDE/esp/ESP32-Wi-Fi-Penetration-Tool-1.1/`
+Clone this repository:
+- `git clone --recurse-submodules https://github.com/plasticuproject/ESP-IDF_LDE.git`
+
+Make any desired firmware modifications to the source files in `./ESP-IDF_LDE/esp/ESP32-Wi-Fi-Penetration-Tool-1.1/`
 
 Run:
 - `./build_image.sh` to build the Ubuntu development environment docker image.
 - `./start_container.sh` to run the disposable docker container with an interactive shell.
-
-Make any additional firmware modifications if needed.
-
-Run:
 - `./start_build.sh` inside the container to compile and build firmware.
 
 The full firmware source code and build files will be exported to `/tmp/` of your host machine. Install [Esptool.py](https://docs.espressif.com/projects/esptool/en/latest/esp32/) and then flash the firmware to your device using the command:
